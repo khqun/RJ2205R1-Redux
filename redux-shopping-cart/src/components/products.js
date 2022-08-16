@@ -15,7 +15,7 @@ export default function Product() {
             }).catch((err) => {
                 throw err
             })
-    }, [])
+    }, [dispatch])
     const handleAdd = (itemId) => {
         dispatch(addToCart(itemId))
     }

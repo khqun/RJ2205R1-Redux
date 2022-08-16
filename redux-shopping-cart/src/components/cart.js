@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 export default function Cart() {
     const dispatch = useDispatch();
     const cart = useSelector(state => state.cart);
-    console.log(cart);
+    const money = useSelector(state => state.money)
     const remove = (itemId) => {
         dispatch(removeFromCart(itemId))
     }
@@ -33,6 +33,9 @@ export default function Cart() {
                     {renderCart()}
                 </thead>
             </table>
+            <div>
+                <h1>money: {money} $</h1>
+            </div>
             <Link to='/'>Home</Link>
         </div>
     )

@@ -1,0 +1,13 @@
+/* 
+input 2 username va password check xem dung khong neu dung 
+navigate toi trang lay axios va hien thi noi dung
+
+
+Input:
+action payload gui event len:
+cho username va password vao mot user cuc bo roi khi bam login se dispatch user
+len store, kiem tra voi reducer va huong den trang sau 
+
+Axios:
+use effect + axios + hien thi
+*/
